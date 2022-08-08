@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+Order Allow,Deny
+Allow from all
+
+
+Header set Access-Control-Allow-Origin *
+Header set Access-Control-Allow-Headers *
